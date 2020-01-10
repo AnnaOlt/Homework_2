@@ -1,0 +1,64 @@
+
+/* //For all pages */
+body {background-image: url(morocco.png) ;
+}
+
+.navbar { background-color: #eaf2fa}
+
+.nav-link {
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+#name {
+    float: left;
+    font-size: 28px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.d-flex {
+    display: contents;
+    text-align: center;
+    box-sizing: content-box;
+    border: solid;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+/* //Portfolio  */
+
+img { height: 200px;
+    width: 200px;}
+
+
+.photo-labels {
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    background-color: tomato;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* //About */
+
+
+
+#headshot {float: left;
+width: 200px;
+height: 200px;}
+
+/* //Contact */
+
+
+@media (min-width: 1650px) .wrapper {
+    width: 1400px;
+}
+
+@media (min-width:1200px)
