@@ -3,7 +3,7 @@
 body {background-image: url(morocco.png) ;
 }
 
-.navbar { background-color: #eaf2fa}
+.navbar { background-color: rgb(60, 171, 193);}
 
 .nav-link {
     display: inline-flex;
@@ -15,7 +15,7 @@ body {background-image: url(morocco.png) ;
 #name {
     float: left;
     font-size: 28px;
-    background-color: blueviolet;
+    background-color: rgb(60, 171, 193);
     color: white;
     padding: 10px;
     margin-right: 10px;
@@ -24,7 +24,7 @@ body {background-image: url(morocco.png) ;
 .d-flex {
     display: contents;
     text-align: center;
-    box-sizing: content-box;
+    box-sizing: content;
     border: solid;
     padding: 20px;
     margin-top: 20px;
