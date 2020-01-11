@@ -1,17 +1,31 @@
 
-/* //For all pages */
-body {background-image: url(morocco.png) ;
+/* For all pages */
+
+body, html {background-image: url(morocco.png);
+   
 }
 
-.navbar { background-color: rgb(60, 171, 193);}
-
+/* NAV */
+.navbar { background-color: rgb(60, 171, 193);
+width: 100%;
+size: content;
+overflow: hidden;
+}
+/* Link styles */
 .nav-link {
     display: inline-flex;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-
+    font-size: inherit;
 }
-
+/* Stack when screen gets smaller */
+@media screen and (max-width: 600px) {
+    .nav-item {
+        float:none;
+        width:100%
+    }
+}
+/* fixed name/logo */
 #name {
     float: left;
     font-size: 28px;
@@ -21,44 +35,97 @@ body {background-image: url(morocco.png) ;
     margin-right: 10px;
 }
 
+
+/* //Content box/ */
+
+.container-fluid {
+    margin: 0 auto;
+    width: 100%;
+   
+}
+
 .d-flex {
     display: contents;
     text-align: center;
-    box-sizing: content;
+    box-sizing: content-box;
     border: solid;
+    border-color: grey;
     padding: 20px;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: white;
+    background-color: white; }
+}
+/* Text in Content box  */
+p {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;}
+
+/* text gets larger w/ smaller screen  */
+    @media screen and (min-width: 600px) {
+        p { font-size: 16px;
+        }
+    }
+
+/* /img in content box/ */
+#headshot {
+    float: left;
+    min-height: 200px;
+    min-width: 200px;
+    max-width: fit-content;
+    max-height: fit-content; }
+
+@media screen and (max-width: 600px) {
+    #headshot { size: flex;
+    }
 }
 
 /* //Portfolio  */
 
-img { height: 200px;
-    width: 200px;}
-
+.img-responsive {
+    block-size: inherit;
+    max-width: flex;
+    max-height: flex;
+}
 
 .photo-labels {
     font-style: italic;
     font-size: 18px;
     color: white;
-    background-color: tomato;
+    background-color: tan;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* //About */
 
+/* //Contact Page */
 
-
-#headshot {float: left;
-width: 200px;
-height: 200px;}
-
-/* //Contact */
-
-
-@media (min-width: 1650px) .wrapper {
-    width: 1400px;
+.form-control {
+    display: flex;
+    padding: 10px 0;
+    
 }
 
-@media (min-width:1200px)
+.form-control label {
+    padding-right: 10px;
+}
+
+.form-control input {
+    flex: 1;
+}
+
+
+.footer { 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(60, 171, 193);
+}
+
+.img-responsive {
+    width: 100%;
+  max-width: 400px;
+  height: auto;
+
+}
+
+
+
+@media (min-width:570px) {}
