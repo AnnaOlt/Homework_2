@@ -47,7 +47,7 @@ overflow: hidden;
 .d-flex {
     display: flex;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border: solid;
     border-color: grey;
     padding: 20px;
@@ -99,26 +99,11 @@ p {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 /* //Contact Page */
 
-.form-control {
+.form-group {
     display: flex;
-    block-size: 100%;
-    padding: 10px 0;
-    
-}
-.form-control label {
-    padding-right: 10px;
+    width: 300px;
 }
 
-.form-control input {
-    flex: 1;
-}
-
-.img-responsive {
-    width: 100%;
-  max-width: 400px;
-  max-height: 400px;
-
-}
 
 
 .container-fluid main-footer { 
