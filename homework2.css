@@ -77,7 +77,7 @@ p {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-height: auto; }
 
 @media screen and (max-width: 600px) {
-    #headshot { image-rendering: 100px;
+    .img-container { width: 100%;
         }
 }
 
